@@ -1,0 +1,37 @@
+.ui-toolbar
+{
+	position:relative;zoom:1;
+	overflow:hidden;
+	height:23px;
+	margin-bottom:-1px;
+	font-size:11px;
+}
+.ui-tool
+{
+	float:left;
+	height:21px;min-width:4px;
+	overflow:hidden;
+    margin-right:-1px;
+    border-top:none;
+    border-bottom:none
+}
+.ui-toolbar .ui-state-hover,
+.ui-toolbar .ui-state-active
+{
+	position:relative;
+	z-index:1;
+}
+.ui-toolbar .ui-state-hover,
+{
+	z-index:2;
+}
+.ui-tool a 
+{
+	display:inline-block;
+    width:21px;
+    outline:0;
+    padding:3px 0 0;
+    text-decoration:none !important; 
+    cursor:pointer; 
+    text-align:center}
+.superscript a{margin-top:-4px}

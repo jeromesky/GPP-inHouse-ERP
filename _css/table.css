@@ -1,0 +1,55 @@
+body {
+ background-color: #eee;
+ font-family: Verdana;
+}
+a {
+ color: #00f;
+ text-decoration: none;
+}
+.notSoWide {
+ font-family: Tahoma, Arial;
+ font-size: 0.8em;
+ padding: 5px;
+ background-color: #fff;
+ border-right: 1px solid #ddd;
+ border-bottom: 1px solid #ddd;
+ width: 400px;
+ margin-bottom: 25px;
+}
+.wider {
+ font-family: 'Trebuchet MS', Arial;
+ font-size: 0.9em;
+ padding: 10px;
+ background-color: #fff;
+ border-right: 1px solid #ddd;
+ border-bottom: 1px solid #ddd;
+ width: 600px;
+ margin-bottom: 25px;
+}
+.widest {
+ font-family: 'Lucida Sans Unicode', Arial;
+ font-size: 1em;
+ padding: 15px;
+ background-color: #fff;
+ border-right: 1px solid #ddd;
+ border-bottom: 1px solid #ddd;
+ width: 90%;
+}
+.table {
+ width: 100%;
+ border: 1px solid #f00;
+}
+.table .th {
+ background-color: #f00;
+ color: #fff;
+ font-weight: bold;
+ border-bottom: 1px dotted #f00;
+}
+.table .tr:nth-child(odd) {
+ background-color: #eee;
+}
+.table .td {
+ float: left;
+ width: 23%;
+ padding-left: 2%;
+}

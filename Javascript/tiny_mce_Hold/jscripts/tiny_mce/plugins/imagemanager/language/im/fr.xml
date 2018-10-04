@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<language-pack>
+	<header>
+		<author>Moxiecode Systems AB</author>
+		<version minor="1" major="0" releasedate="2005-09-27" />
+		<description>
+			This is the french language pack for the MCImageManager.
+		</description>
+	</header>
+
+	<language code="fr" title="Francais" dir="ltr">
+		<group target="common">
+			<item name="filemanager">Gestionnaire d'images</item>
+			<item name="createdir">Créer dossier</item>
+			<item name="refresh">Rafraîchir</item>
+			<item name="upload">Uploader une image</item>
+			<item name="error_no_access">Erreur : Droits d'accès restreints.</item>
+			<item name="error_delete_failed">Erreur : Droits d'accès restreints.</item>
+		</group>
+
+		<group target="createdir">
+			<item name="title">Créer dossier</item>
+			<item name="description">Insérez le nom du dossier à créer.</item>
+			<item name="template">Template:</item>
+			<item name="select_template">-- Sélection template --</item>
+			<item name="directory_name">Nom du dossier :</item>
+			<item name="create_in">Créer dans :</item>
+			<item name="button_create">Créer</item>
+			<item name="button_cancel">Annuler</item>
+			<item name="error_missing_name">Erreur : Spécifiez un nom de dossier.</item>
+			<item name="error_select_template">Erreur : Sélectionnez un template.</item>
+			<item name="error_template_missing">Erreur : Ce template est manquant.</item>
+			<item name="error_invalid_name">Erreur : Nom de dossier invalide.</item>
+			<item name="error_exists">Erreur : Un dossier de ce nom existe déjà.</item>
+		</group>
+
+		<group target="upload">
+			<item name="title">Upload</item>
+			<item name="description">Utilisez ce formulaire pour uploader vos fichiers.</item>
+			<item name="upload_in">Uploader dans :</item>
+			<item name="valid_extensions">Extensions valides :</item>
+			<item name="max_upload_size">Taille max :</item>
+			<item name="file_to_upload">Fichier à uploader :</item>
+			<item name="as_file_name">Nom de destination :</item>
+			<item name="required_filename">Renseignez le nom du fichier.</item>
+			<item name="button_upload">Uploader</item>
+			<item name="button_add_upload">Ajouter fichier</item>
+			<item name="button_cancel">Annuler</item>
+			<item name="error_exists">Erreur : Un fichier de ce nom existe déjà.</item>
+			<item name="error_to_large">Erreur : Fichier trop volumineux.</item>
+			<item name="remove">Supprimer</item>
+		</group>
+
+		<group target="images">
+			<item name="title">Gestionnaire d'images</item>
+			<item name="subtitle">Gestionnaire d'images</item>
+			<item name="select_directory">Sélectionner dossier :</item>
+			<item name="width">Largeur :</item>
+			<item name="height">Hauteur :</item>
+			<item name="type">Type :</item>
+			<item name="size">Taille :</item>
+			<item name="scale">Echelle :</item>
+			<item name="confirm_delete">Etes-vous sur de vouloir supprimer ce fichier ?</item>
+			<item name="no_files">Aucune image dans ce dossier.</item>
+			<item name="image">Fichier image</item>
+			<item name="bmp">Image BMP</item>
+			<item name="png">Image PNG</item>
+			<item name="jpg">Image JPEG</item>
+			<item name="gif">Image GIF</item>
+			<item name="tif">Image TIFF</item>
+			<item name="editwriteaccess">Droits d'accès restreints, fichiers temporaires non créés.</item>
+		</group>
+
+		<group target="edit_image">
+			<item name="save_image">Sauver image</item>
+			<item name="revert_image">Revenir à la dernière sauvegarde</item>
+			<item name="toggle_color">sélection couleur</item>
+			<item name="crop_image">Couper image</item>
+			<item name="resize_image">Retailler image</item>
+			<item name="please_wait">Traitement de l'image, patientez...</item>
+			<item name="constrain">Conserver les proportions</item>
+			<item name="left">g :</item>
+			<item name="top">h :</item>
+			<item name="width">L :</item>
+			<item name="height">H :</item>
+		</group>
+
+		<group target="preview">
+			<item name="title">Prévisualiser</item>
+			<item name="prev">Précédent</item>	
+			<item name="next">Suivant</item>	
+			<item name="keyboard_next">Raccourcis : ESPACE, N, FLECHE DROITE, PAGE DOWN</item>	
+			<item name="keyboard_prev">Raccourcis : P, FLECHE GAUCHE, PAGE UP</item>	
+		</group>
+	</language>
+</language-pack>

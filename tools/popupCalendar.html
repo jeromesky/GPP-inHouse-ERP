@@ -1,0 +1,20 @@
+<HTML>
+<HEAD>
+	<TITLE>JavaScript Toolbox - Calendar Popup To Select Date</TITLE>
+	<SCRIPT LANGUAGE="JavaScript" SRC="../js/CalendarPopup.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../js/AnchorPosition.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../js/date.js"></SCRIPT>
+    <SCRIPT LANGUAGE="JavaScript" SRC="../js/PopupWindow.js "></SCRIPT>
+	<SCRIPT LANGUAGE="JavaScript">	var cal = new CalendarPopup();	</SCRIPT>
+</HEAD>
+<BODY>
+
+<FORM NAME="example">
+(View Source of this page to see the example code)<br>
+
+<INPUT TYPE="text" NAME="date1" VALUE="" SIZE=25>
+<A HREF="#"   onClick="cal.select(document.forms['example'].date1,'anchor1','MM/dd/yyyy'); return false;"   NAME="anchor1" ID="anchor1">select</A>
+</FORM>
+
+</BODY>
+</HTML>

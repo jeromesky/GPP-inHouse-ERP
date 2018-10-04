@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.clear { clear:both }
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+}
+table{
+font-family:Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	}
+H1{
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+color:#FFFFFF;
+}
+H5{ font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#FFFFFF
+}
+H3{ font-family:Arial, Helvetica, sans-serif;
+font-size:14px;
+color:#FFFFFF;
+}

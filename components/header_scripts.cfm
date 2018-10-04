@@ -1,0 +1,2 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.petro21.com/my-office/javascript/UI-1.8/jquery-ui-1.8rc3.custom.min.js"></script>

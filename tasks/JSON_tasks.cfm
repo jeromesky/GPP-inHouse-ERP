@@ -1,0 +1,3 @@
+<cfparam name="returnType" default="calendar">
+<cfinclude template="qry_tasks.cfm">
+[<cfoutput query="qryTasks">{id: #packageID#, title: '#branchName#', description: '#typeLabel#', events: '#eventName#', jobID: '#taskID#', eventid: #eventID#, completed: <cfif taskCompleted NEQ "">1<cfelse>0</cfif>, start: '#dateformat(taskDateDue, "yyyy-mm-dd")#T#TimeFormat('12:00:00', "HH:mm:ss")#', allDay: false}<cfif qryTasks.currentRow NEQ qryTasks.recordCount>,</cfif></cfoutput>]

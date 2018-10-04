@@ -1,0 +1,244 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+ul{list-style:none}
+.labelarea{ clear:both; float:left;width:80px; padding:0px; margin:1px; text-align:right; }
+.fieldarea{clear:right; float:left; padding:0px; margin:1px 1px 1px 10px; width:445px}
+.rightSeparator { border-right:1px dotted #CCCCCC; border-bottom:1px dotted #CCCCCC; padding:5px 0 5px 10px }
+.JustRight { border-right:1px dotted #666666;  }
+
+.input-text{
+	border:1px solid #3b6e22;
+	color:#666666;
+	width:180px;
+}
+.inputField, .textarea, .selectLis{
+ background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat;
+font-size:12px;
+padding:4px 2px;
+border:solid 1px #aaaaaa;
+margin:5px 0 0px 0px;
+}
+
+input .addButton{background-color: none ; border:0px dotted #fff}
+.sepa {
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-right-color: #ECF5FB;
+	border-bottom-color: #ECF5FB;
+}
+
+.backSelected{background-color:#FFE7D6}
+#areaSearchResult { margin:20px 0 0 0}
+*/
+<!--
+body, table {
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px;
+color:#333333;}
+
+#modalExternal fieldset,
+#tabs_crm fieldset,
+#areaConfiguration fieldset,
+#area_company_Form fieldset{ margin:20px 5px 5px 5px; border-top:1px solid #CCCCCC; border-left:1px solid #ffffff; border-right:1px solid #ffffff; border-bottom:1px solid #ffffff; }
+
+#modalExternal legend,
+#tabs_crm legend,
+#areaConfiguration legend,
+#area_company_Form legend{  color:#999999; padding:1px 25px 1px 15px; margin-bottom:10px; border:1px solid #CCCCCC}
+ 
+#tabs_crm legend span {position:absolute; background-image:url(../img/AppleCross.png); background-position:right; background-repeat:no-repeat; top:-10px; right:-5px}
+#tabs_crm hr, hr {border: 0; color:#CCCCCC; background-color: #CCCCCC; height: 1px; clear:both }
+#tabs_crm .record,
+#areaCompanyMemberships .record
+{clear:both; padding:5px 0px; margin:10px 0px 5px 0px; border-bottom:1px solid #aed0ea; }
+
+/*#tabs_crm .ui-widget-content{ min-height:540px}
+#tabs_invoice,
+ .ui-widget-content #tabs_invoice{ min-height:400px} !important
+*/
+-->
+#tableClientSearchResult td,  
+#table_weekgroups td,
+#table_weekevent td,
+#table_attended_events td, 
+#tableClientIncoices td, 
+.tableClientHeader td{
+border-bottom:1px solid #E4E4E4; border-right:1px dotted  #e3e3e3
+}
+
+.ui-datepicker
+    { z-index: 10100; }
+
+.searchResultGridPaid{ border-bottom:1px solid #E4E4E4; border-right:1px solid #E4E4E4; background-color:#e6f1f9}
+.tableOtions td { border-bottom:1px dotted #666666 }
+.tableOtionsRight td { border-right:1px dotted #666666 }
+
+#tabs_crm  #paneLeft {clear:both; float:left; position: relative; width:780px; height:500px;  background-image:url(../img/GPPDATA/Arrow_Left.jpg); background-position:right top; background-repeat:no-repeat; overflow:auto; border:1px solid #CCCCCC; border-top:1px  solid #FFFFFF; border-right:1px  solid #FFFFFF  }
+#tabs_crm  #paneRight {clear:right; float:left; position: relative; background-color:#e5f2fb;  padding:15px; height:470px; width:270px; }
+#tabs_crm  #paneRightInvoice {float:left; position:relative; width:380px; height:495px; display:block; margin-left:0px}
+#tabs_crm #areaSearchResult {  height:500px; overflow:auto; }
+
+a.blueBut { display:block; width:44px; font-size:11px; height:16px; color:#64c4ed; background-image:url(../img/blue_But.png); background-position:0px 19px; padding:3px 0px 0px 3px; text-decoration:none; margin:0px}
+a:HOVER.blueBut { color:#ffffff; background-image:url(../img/blue_But.png); background-position:0px 0px; }
+/*    LARGe BLUE BUTTOn   */
+a.blueButXL { float:left; display:block; width:57px; font-size:11px; height:41px; color:#64c4ed; background-image:url(../img/blue_But_large.png); background-position:0px 46px; padding:5px 5px 0px 5px; text-decoration:none; margin:0px}
+a:HOVER.blueButXL { color:#ffffff; background-image:url(../img/blue_But_large.png); background-position:0px 0px; }
+
+.display{ display:none}
+
+/* modal windaws 
+#modalNewEvent{width:720px; height:520px;}
+#modalExternal{width:820px; height:520px;}
+*/
+#client legend { border:1px solid #c6dff2; background-color:#e5f2fb;    }
+
+#tabs_invoice i{width:180px; display:block; float:left; border:1px solid #aaaaaa; padding:3px 0 1px 2px; margin:2px 0 2px 2px; background-color:#f6f6f6; min-height:15px;}
+
+/* hidde the new user button until a search has benn performed */
+<!---#crm_button_NewUser{ visibility:hidden; }--->
+
+/*#areaSearchDetails i{width:175px; display:block; float:left; border:1px solid #aaaaaa; padding:3px 0 1px 2px; margin:2px 0 2px 2px ; background-color:#f6f6f6; min-height:15px;  margin:2px 0 2px 2px;border:1px solid #aaaaaa; background-color:#f6f6f6; background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat; }*/
+
+/* #areaSearchDetails */
+/*#areaSearchDetails span,
+#areaCompany span
+{width:60px; display:block; float:left; padding:3px 0 1px 0; margin:2px 0 2px 0; clear:both;}*/ 
+
+/* menue last update*/ 
+#tabs_crm  #lastUpdate .label { clear:none; min-width:70px; display:inline; float:left; padding:3px 5px 1px 0; margin:2px 0 2px 5px;  color:#666666; text-align:right}
+#tabs_crm #lastUpdate .displayData { clear:none; min-width:120px; display:inline; float:left; padding:3px 15px 1px 0; margin:2px 0 2px 5px; color:#277eca ; border-right:1px dotted #aed0ea;  }
+
+
+#tabs_crm  label,
+#modalExternal label
+ { clear:both; display:block; float:left; padding:3px 5px 1px 0; }
+
+#modalExternal span,
+#tabs_crm span, 
+#area_company_Form span,
+#areaConfiguration span,
+#areaCompanyMemberships span
+{width:80px; display:block; float:left; padding:3px 0 1px 0; margin:2px 0 2px 0; clear:both; display:table-cell; vertical-align:middle}
+
+#modalExternal  i,
+#tabs_crm i
+{ font-style:normal; display:block; float:left; background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat; border:1px solid #aaaaaa; margin:2px 0 2px 2px; padding:0 0 0 3px; display:table-cell; vertical-align:middle; min-height:20px;}
+
+#tabs_crm B,
+#area_company_Form B,
+#areaConfiguration B
+{ font-style:normal; font-weight:normal }
+
+/* create columns for tickboxes */
+#modalExternal del, #area_company_Form del{
+width:90px; float:left; clear:both; display:block; margin:2px 5px 2px 2px; font-style:normal; text-decoration:none}
+#modalExternal dfn, #area_company_Form dfn{
+width:90px; float:left; display:block; margin:2px 0px 2px 2px; font-style:normal;}
+
+#modalExternal i.NoFormat, 
+#tabs_crm i.NoFormat, 
+#area_company_Form i.NoFormat,
+#areaConfiguration i.NoFormat,
+#areaCompanyMemberships i.NoFormat
+{ display:block; float:left; background-color:#fff;  background-image:none; margin:2px 0 2px 2px;  min-height:20px; border:1px solid #FFFFFF}
+
+#tabs_crm em { font-style:normal}
+
+input[type="text"] , input[type="textarea"]   {
+ background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat; min-height:20px; border:solid 1px #aaaaaa; }
+
+ input[type="submit"],  input[type="reset"],    input[type="button"], button {
+ background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat;  min-height:20px; border:solid 1px #aaaaaa; padding:5px 8px; margin:2px 0px }
+
+input[type="submit"]:hover,  input[type="reset"]:hover,    input[type="button"]:hover, button:hover { background-image:none;  background-color:#e5f2fb }
+  
+/*#areaSearchDetails i,
+#areaCompany i 
+ areaInvoice areaConference areaNewsletters areaInterest areaCompany areaSearchDetails areaSearchResult
+{ font-style:normal; display:block; float:left; background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat; border:1px solid #aaaaaa; margin:2px 0 2px 2px;  vertical-align:middle; min-height:20px;}*/
+#tabs_crm .crm_button_OK {width:26px; height:24px; display:inline; margin:0px}
+
+#tabs_crm .INVComments, 
+#tabs_crm .Comment_Public, 
+#tabs_crm .Comment_Paid_Status 
+{ height:51px; width:180px; display:inline; float:left; padding:3px 0 1px 2px;}
+
+.fieldsetHighLight{ background-image:url(../img/Fieldset_Background.png); background-repeat:repeat-x}
+
+#tabs_crm .strPhDirect_No ,
+#tabs_crm .strFaxDirect_No,
+#tabs_crm .strPhSwitchboard_No,
+#tabs_crm .strPhAlt1_No,
+#tabs_crm .strFaxSwitchBoard_No,
+#tabs_crm .strFaxAlt1_No
+{ width:113px;    }
+		
+#tabs_crm .strPostal_Adress, 
+#tabs_crm .strStreet_Adress,     
+#tabs_crm .Black_Listed_comment ,
+#tabs_crm .strPersonal_Info,
+#tabs_crm .Perasonal_info_public
+{ height:51px; width:205px; overflow:auto   }
+
+#tabs_crm .Black_Listed_Date,
+#tabs_crm .Title,
+#tabs_crm #Search_title,
+#tabs_crm #Search_country,
+#tabs_crm .strFirst_Name,  
+#tabs_crm .strSurname,
+#tabs_crm .strDesignation,  
+#tabs_crm .BPA_Designation, 
+#tabs_crm .strCity, 
+#tabs_crm .intCode, 
+#tabs_crm .CountryName,
+#tabs_crm .strMobile_No,
+#tabs_crm .strEmail,
+#tabs_crm .strEmail_Alt,
+#tabs_crm .strSecretary_Email,
+#tabs_crm .email_web,
+#tabs_crm .password,
+#tabs_crm .BPA_Designation,
+#tabs_crm .Holding_Company,
+#tabs_crm .strIndSource,
+#tabs_crm .lngSource_Code_ID,
+#tabs_crm .Addr_State,
+#tabs_crm .FinanceEmail,
+#tabs_crm .FinanceName,
+#tabs_crm .SecretaryName2,
+#tabs_crm .SecretaryName1,
+#tabs_crm .strSecretary_Email2,
+#tabs_crm .strSecretary_Email,
+#tabs_crm .userPhoNumbInt,
+#tabs_crm .userMidlename
+{  width:205px;  min-height:20px; }
+
+#tabs_crm .STATUS
+{  width:80px;  min-height:20px; }
+
+#tabs_crm .UpdatedDate,
+#tabs_crm .UpdatedUser,
+#tabs_crm .CaptureDate,
+#tabs_crm .CaptureUser
+ { background-color:#fff; width:80px; background-image:none }
+
+#tabs_crm .company {width:175px; display:block; float:left; border:1px solid #aaaaaa; padding:3px 0 1px 2px; margin:2px 0 2px 2px; background-color:#f6f6f6; background:#ffffff url(http://www.petro21.com/img/inputBg.gif) top left no-repeat;}
+#tabs_crm  .field_button_container {width:20px; display:block; float:left;  margin:2px 0 2px 2px; padding:0px; border:0px solid #FFFFFF }
+
+#tabs_crm .phoneCode, 
+#tabs_crm .AreaCodeTel,
+#tabs_crm .AreaCodeTelSwitch,
+#tabs_crm .AreaCodeTelAlt,
+#tabs_crm .AreaCodeFax,
+#tabs_crm .AreaCodeFaxSwitch,
+#tabs_crm .AreaCodeFaxAlt,
+#tabs_crm .FaxCode { width:40px;  padding:0px 0 0px 2px; }
+
+#tabs_crm .functionRemove{ float:right; width:25px; margin:0 0 0 15px; padding:-25 0 0 0;  background-image:url(../img/AppleCross.png); background-repeat:no-repeat}
+#tabs_crm #userMenu {list-style-type:none; margin:0px; padding:0px;}
+#tabs_crm #userMenu li {list-style-type:none; margin:0px; padding:3px 2px; border-bottom:1px solid #CCCCCC}
+#tabs_crm #userMenu a { color:#333333; text-decoration:none}
+#tabs_crm #lastUpdate	{border-bottom:1px solid #aed0ea; border-left:1px solid #aed0ea; border-right:1px solid #aed0ea; display:block}

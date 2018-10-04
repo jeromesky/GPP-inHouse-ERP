@@ -1,0 +1,45 @@
+<cfset eventid = #url.eventID#> 
+
+<cfquery name="get" datasource="#gpp#" >
+SELECT	
+		[eventName]
+        ,[briefingSlogan]
+        ,[Slogan]
+        ,[sloganSub]
+		[eventCurrency]
+        ,[eventDateEnd]
+        ,[eventDateStart]
+        ,[eventCurrency]
+        ,[eventCost]
+        ,[discountValue]
+        ,[discountDate]
+        ,[Econf]
+        ,[regOpenTime]
+        ,[EventStartTime]
+        ,[preRegistration]
+        ,[preRegistrationDate]
+        ,[preRegistrationTime]
+        ,[filesAvailableDate]
+        ,[AttendFormDate]
+        ,[sloganSub]
+        ,[VenueName]
+        ,[city]
+        ,[country]
+        ,[venuRoom]
+        ,[eventGroupID]
+        ,[eventType]
+        ,[singleEventNot]
+        ,[eventGroupColorPri]
+        ,[eventGroupColor2nd]
+        ,[boothTimeSetup]
+        ,[boothDateSetup]
+        ,[boothTimeRemove]
+        ,[boothDateRemove]
+        ,[eventCurrency]
+        ,[eventPriceValue]
+        ,[live]
+FROM
+		[CRM_Event_Edit]
+WHERE    
+		[eventID] = <cfqueryparam  value="#eventid#"> 
+</cfquery>

@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* STYLING FOR FALIDATION OF FIELD*/
+.LV_validation_message{ padding:0 0 0 18px; margin:0 0 0 5px; float:none; width:auto; }
+.LV_valid { color:#00CC00; 	background-image:url(../img/ok_tick.gif); 	background-repeat:no-repeat }
+.LV_invalid { color:#CC0000; 	background-image:url(../img/erro_crossr.gif); 	background-repeat:no-repeat }
+.LV_valid_field,
+input.LV_valid_field:hover, 
+input.LV_valid_field:active,
+textarea.LV_valid_field:hover, 
+textarea.LV_valid_field:active {     border: 1px solid #BDBDBD; }
+.LV_invalid_field, 
+input.LV_invalid_field:hover, 
+input.LV_invalid_field:active,
+textarea.LV_invalid_field:hover, 
+textarea.LV_invalid_field:active { border: 1px solid #CC0000; }

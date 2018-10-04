@@ -1,0 +1,1 @@
+<cflocation url="http://www.google.com">

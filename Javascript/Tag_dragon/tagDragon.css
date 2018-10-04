@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/* CSS Document */
+   .tagbox ol  {   position:absolute;  background:#000;  list-style:none;  list-style-position: inside;  margin:0; padding:0;  }
+ .tagbox ol li { width:500px; border-left:1px solid #333; border-right:1px solid #333; }
+  .tagbox ol li em { color:#cf3; font-weight: bold;font-style: normal; }
+  .tagbox ol li a {  text-decoration:none; color:#fff; display:block; padding:5px;border-bottom:1px solid #333;  }
+ .tagbox ol li a:hover, .hl { background:#333;  }
+ .tagbox input {width:100%; height: 1.5em; padding: 0px 0px 0px 0px; }
+ .tagbox-lkup { width:100%; }

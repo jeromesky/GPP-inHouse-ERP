@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/***** SLIDING MENU *****/
+
+.slideTab {
+  	background: url(../img/Slide_tab_b.png) repeat-x 0 0;
+	height: 27px;
+	position: relative;
+    top: 0;
+    z-index: 999;
+}
+
+.slideTab ul.tabButton {
+	display: block;
+	position: relative;
+  	float: right;
+  	clear: right;
+  	height: 27px;
+	width: auto;
+  	font-weight: bold;
+	line-height: 27px;
+	margin: 0;
+	margin-top:4px;
+	right: 150px;
+  	color: white;
+  	font-size: 80%;
+	text-align: center;
+}
+
+.slideTab ul.tabButton li.left {
+  	background: url(../img/Slide_tab_l.png) no-repeat left 0;
+  	height: 27px;
+	width: 20px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.slideTab ul.tabButton li.right {
+  	background: url(../img/Slide_tab_r.png) no-repeat left 0;
+  	height: 27px;
+	width: 21px;
+	padding: 0;
+	margin: 0;
+  	display: block;
+	float: left;
+}
+
+.slideTab ul.tabButton li {
+ 	text-align: left;
+  	padding: 0 0px;
+	display: block;
+	float: left;
+	height: 27px;
+  	background: url(../img/Slide_tab_m.png) repeat-x 0 0;
+}
+
+.slideTab ul.tabButton li a { 	color: #15ADFF }
+.slideTab ul.tabButton li a:hover { 	color: white }
+.slideTab a.slideOpen, .slideTab a.slideClose {
+	height: 20px;
+	line-height: 20px !important;
+	padding-left: 30px !important;
+	cursor: pointer;
+	display: block;
+	width: 100px;
+	position: relative;
+	top: 0px;
+}
+
+.slideTab a.slideOpen {background: url(../img/Slide_bt_open.png) no-repeat left 0;}
+.slideTab a.slideClose {background: url(../img/Slide_bt_close.png) no-repeat left 0;}
+.slideTab a:hover.slideOpen {background: url(../img/Slide_bt_open.png) no-repeat left -19px;}
+.slideTab a:hover.slideClose {background: url(../img/Slide_bt_close.png) no-repeat left -19px;}
+
+/* sliding panel */
+#sliderContainer {
+    position: absolute;   /*Panel will overlap  content */
+    /*position: relative;*/   /*Panel will "push" the content down */
+    top: 35px;
+    width: 100%;
+    z-index: 999;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slidepanel {
+	width: 100%;
+	height: 270px;
+	color: #999999;
+	background: #000;
+	overflow: hidden;
+	position: relative;
+	z-index: 3;
+	display: none;
+}
+
+
+
+#slidepanel a {
+	text-decoration: none;
+	color: #15ADFF;
+}
+
+#slidepanel a:hover {
+	color: white;
+}
+
+
+#slidepanel .slideContent {
+	width: 960px;
+	margin: 0 auto;
+	padding-top: 15px;
+	text-align: left;
+	font-size: 0.85em;
+}

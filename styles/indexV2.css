@@ -1,0 +1,1607 @@
+@charset "UTF-8";
+/* CSS Document */
+/*
+@import url('../styles/liveValidate.css');
+@import url('../styles/CRM.css');
+@import url('../styles/Sliding_Panel.css');
+*/
+body {
+margin-left : 0;
+margin-top : 0;
+margin-right : 0;
+margin-bottom : 0;
+font-family : Lucida Grande, Lucida Sans, Arial, sans-serif;
+font-size : 12px;
+color : #333333;
+}
+table { font-size:12px; border:0px;
+}
+#outer {
+margin : 0 0 0 0;
+background-color : #172323;
+padding : 0 4px 50px 4px;
+}
+#iner {
+background-color : #ffffff;
+padding : 0;
+font-family : Arial, Helvetica, sans-serif;
+font-size : 12px;
+color : #76787a;
+}
+
+/* =Clear
+--------------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+	content:' ';
+	display: block;
+	font-size: 0;
+	line-height: 0;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+.clearfix {
+height : 1%;
+}
+.clearfix {
+display : block;
+}
+
+.noMargin {margin:0px}
+
+.marginTop15{ margin-top:15px}
+
+.marginBottom15{margin-bottom:15px}
+.paddingLeft10{padding-left:10px;}
+.marginLeft5{ margin-left:5px}
+.borderRight{border-right:1px solid #e8e8e8}
+.noBorders{border:0}
+
+.cursorPointer{cursor:pointer}
+
+/* =STUFF to import to new sytkles
+--------------------------------------------------------------------------------*/
+.user-card{ padding:10px; background-color:#f4f4f4; margin-bottom:10px }
+.user-card .photo{ border:1px solid #999; padding:1px }
+.user-card .details{ float:left; width:340px; padding:10px; background-color:#fff }
+.user-card .placeHolder{ float:left; padding:10px; background-color:#fff }
+.user-card .details i{ border:none}
+.user-card  .info{float:left; width:69px; margin-right:10px }
+
+/* =warning colors
+--------------------------------------------------------------------------------*/
+.warningBorder, .warningBorder legend{ border:1px solid #F00}
+.warningBg{background:none; background-color:#fff7f7}
+.warningText, .warningText legend{ color:#f00}
+
+.warningBorderOk, .warningBorderOk legend{ border:1px solid #00dd0a}
+.warningBgOk{ background:none;background-color:#f2ffee}
+.warningTextOk, .warningTextOk legend{ color:#00dd0a}
+
+
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+.c1, .c2, .c3, .c4, .c5, .c6, .c7, .c8, .c9, .c10, .c11, .c12 {
+	display: inline;
+	float: left;
+	margin-left: 10px;
+}
+
+/* =Grid >> 12 Columns
+--------------------------------------------------------------------------------*/
+.c1{width:71px;}
+.c2{width:152px;}
+.c3{width:233px;}
+.c4{width:314px;}
+.c5{width:395px;}
+.c6{width:476px;}
+.c7{width:557px;}
+.c8{width:638px;}
+.c9{width:719px;}
+.c10{width:800px;}
+.c11{width:881px;}
+.c12{width:962px;}
+
+/* =Grid >> 4 Columns Home page dashpod
+--------------------------------------------------------------------------------*/
+.c_1 {width: 241px;}
+.c_2 {width: 488px;}
+.c_3 {width: 740px;}
+.c_4 {width: 987px;}
+.c_h {margin: 0 10px 0 0px;
+         overflow: hidden;
+         float: left;
+         display: inline;}
+.c_row {width: 988px;
+         margin: 0 auto;
+         overflow: hidden;}
+.c_row .c_row {margin: 0 -1px 0 -0px;
+         width: auto;
+         display: inline-block;}
+
+
+/*  positioning
+--------------------------------------------------------------------------------*/
+.floatRight {
+	float : right;
+}
+
+/* Buttons
+--------------------------------------------------------------------------------*/
+.index button{padding:2px 8px; margin:0 0 0 6px}
+
+/*  fieldset
+--------------------------------------------------------------------------------*/
+fieldset {
+	margin : 0 0 10px 0;
+	border-top : 1px solid #cccccc;
+	border-left : 1px solid #ffffff;
+	border-right : 1px solid #ffffff;
+	border-bottom : 1px solid #ffffff;
+	padding : 0 0;
+}
+legend {
+	color : #999999;
+	padding : 1px 25px 1px 15px;
+	margin-bottom : 10px;
+	border : 1px solid #cccccc;
+	background-color:#fff;
+}
+.legendClose {
+	background-image : url(http://www.petro21.com/my-office/img/collapse.jpg);
+	background-repeat : no-repeat;
+	padding-left : 25px;
+	background-position : 3px 2px;
+}
+.legendOpen {
+	background-image : url(http://www.petro21.com/my-office/img/expand.jpg);
+	background-repeat : no-repeat;
+	padding-left : 25px;
+	background-position : 3px 2px;
+}
+
+/*  List Menu
+--------------------------------------------------------------------------------*/
+.listMenu{
+		list-style:none;
+		margin:0px;
+		padding:0px
+}
+.listMenu li{
+	border-bottom:1px solid #CCC;
+	padding:3px 5px 3px 5px;
+	position:relative;
+}
+
+.listMenu li.listNotification{
+		padding-left:10px
+}
+
+.listMenu li .listNotificationIcon{ 
+	width:16px;
+	height:16px; 
+	position:absolute; 
+	top:-3px; 
+	left:-7px; 
+	position:absolute; 
+	background-image:url(http://www.petro21.com/my-office/_img/listNotification.png);
+}
+
+/*  Alert Ui Modal popup
+--------------------------------------------------------------------------------*/
+#alertUI{
+		padding:10px  20px 0px 20px;	
+}
+
+/*  accordion styling
+--------------------------------------------------------------------------------*/
+.accordion .ui-state-default {background-image:none}
+.accordion .ui-accordion-header{ background-color:#F0F0F0; color:#666; padding:3px 0 3px 25px; border-color:#DDDDDD}
+.accordion .ui-state-active {color:#fff}
+.accordion .ui-accordion-content {padding:10px 6px}
+
+
+/*  Fieldset collapsable
+--------------------------------------------------------------------------------*/
+
+/*  Loading icon
+--------------------------------------------------------------------------------*/
+.loadingGif{
+	margin-left : auto;
+	margin-right : auto;
+	text-align:center; 
+	vertical-align:middle
+}
+
+
+/*  Layout for pods
+--------------------------------------------------------------------------------*/
+.podForm{
+		padding:15px 10px 5px 10px
+}
+
+.podLinks{
+		padding:15px 0
+}
+.podHeader{
+		padding:10px
+}
+.podBgFade{
+	background-image:url(http://www.petro21.com/my-office/_img/Pod_bg.jpg);
+	background-repeat:repeat-x;
+}
+.podBgFade_bl {
+	background-image:url(http://www.petro21.com/my-office/_img/Pod_bg_blue.jpg);
+	background-repeat:repeat-x;
+}
+/*  Notes
+--------------------------------------------------------------------------------*/
+
+.note{ 
+	border-bottom:1px solid #CCC;
+	padding:10px;
+}
+.note .date{
+	display:inline; float:left;
+	color:#069;
+	font-size:11px;
+	margin-right:10px;
+	margin-bottom:15px;
+	
+}
+.note .staff{
+	font-size:11px;
+	display:inline; float:left;
+	margin-right:10px;
+	margin-bottom:15px;
+	
+}
+/*  End Notes
+--------------------------------------------------------------------------------*/
+.fontGrey80{
+		color:#666;
+}
+
+#modalExternal .list, #modalPopUp .list, #tabs_crm .list {
+margin : 0;
+padding : 0;
+list-style : none;
+}
+#modalExternal .list li, #modalPopUp .list li, #tabs_crm .list li {
+margin : 0;
+padding : 3px 0;
+list-style : none;
+border-bottom : 1px dotted #cccccc;
+}
+
+.ui-dialog { border-width:4px; border-color:#6fa1d9}
+
+
+
+#tabs_crm hr, hr {
+border : 0;
+color : #cccccc;
+background-color : #cccccc;
+height : 1px;
+clear : both;
+}
+#tabs_crm .record, #areaCompanyMemberships .record {
+clear : both;
+padding : 5px 0;
+margin : 10px 0 5px 0;
+border-bottom : 1px solid #aed0ea;
+}
+#paneMenu {
+float : left;
+display : inline;
+width : 200px;
+}
+#PaneInfo {
+float : left;
+display : inline;
+min-width : 400px;
+}
+#paneEdit {
+float : left;
+display : inline;
+}
+#tableClientSearchResult td, 
+#table_weekgroups td, 
+#table_weekevent td, 
+#table_attended_events td, 
+#tableClientIncoices td, 
+.tableClientHeader td,
+.tableList td {
+border-bottom : 1px solid #e4e4e4;
+border-right : 1px dotted #e3e3e3;
+}
+
+.tableList  .groupLabel{
+	border-bottom:1px #666 solid;
+	padding-top:25px}
+
+.ui-datepicker {
+z-index : 10100;
+}
+.searchResultGridPaid {
+border-bottom : 1px solid #e4e4e4;
+border-right : 1px solid #e4e4e4;
+background-color : #e6f1f9;
+}
+.tableOtions td {
+border-bottom : 1px dotted #666666;
+}
+.tableOtionsRight td {
+border-right : 1px dotted #666666;
+}
+#tabs_crm #paneLeft {
+clear : both;
+float : left;
+position : relative;
+width : 780px;
+height : 500px;
+background-image : url(http://www.petro21.com/my-office/img/GPPDATA/Arrow_Left.jpg);
+background-position : right top;
+background-repeat : no-repeat;
+overflow : auto;
+border : 1px solid #cccccc;
+border-top : 1px solid #ffffff;
+border-right : 1px solid #ffffff;
+}
+#tabs_crm #paneRight {
+clear : right;
+float : left;
+position : relative;
+background-color : #e5f2fb;
+padding : 15px;
+height : 470px;
+width : 270px;
+}
+#tabs_crm #paneRightInvoice {
+float : left;
+position : relative;
+width : 380px;
+height : 495px;
+display : block;
+margin-left : 0;
+}
+#tabs_crm #areaSearchResult {
+height : 500px;
+overflow : auto;
+}
+a.blueBut {
+display : block;
+width : 44px;
+font-size : 11px;
+height : 16px;
+color : #64c4ed;
+background-image : url(http://www.petro21.com/my-office/img/blue_But.png);
+background-position : 0 19px;
+padding : 3px 0 0 3px;
+text-decoration : none;
+margin : 0;
+}
+a:hover.blueBut {
+color : #ffffff;
+background-image : url(http://www.petro21.com/my-office/img/blue_But.png);
+background-position : 0 0;
+}
+a.blueButXL {
+float : left;
+display : block;
+width : 57px;
+font-size : 11px;
+height : 41px;
+color : #64c4ed;
+background-image : url(http://www.petro21.com/my-office/img/blue_But_large.png);
+background-position : 0 46px;
+padding : 5px 5px 0 5px;
+text-decoration : none;
+margin : 0;
+}
+a:hover.blueButXL {
+color : #ffffff;
+background-image : url(http://www.petro21.com/my-office/img/blue_But_large.png);
+background-position : 0 0;
+}
+.display {
+display : none;
+}
+#client legend {
+border : 1px solid #c6dff2;
+background-color : #e5f2fb;
+}
+.rowHover {
+background-color : #edfaff;
+}
+#tabs_invoice i {
+width : 180px;
+display : block;
+float : left;
+border : 1px solid #aaaaaa;
+padding : 3px 0 1px 2px;
+margin : 2px 0 2px 2px;
+background-color : #f6f6f6;
+min-height : 15px;
+}
+.heightLight {
+color : #990000;
+}
+/* 
+old index will now be toolbar */
+#index {
+border-bottom : 1px solid #aed0ea;
+border-left : 1px solid #aed0ea;
+border-right : 1px solid #aed0ea;
+display : block;
+padding : 4px 0 0 0;
+}
+#index sup {
+float : left;
+display : inline;
+font-size : 12px;
+padding : 0;
+}
+#index .displayLabel {
+/*min-width : 70px;*/
+padding : 3px 5px 1px 5px;
+color : #666666;
+text-align : right;
+font-size : 12px;
+}
+#index .displayData {
+/*min-width : 130px;*/
+padding : 3px 15px 1px 0;
+color : #277eca;
+border-right : 1px dotted #aed0ea;
+font-size : 12px;
+}
+/* 
+NEW TOOLBAR index will now be toolbar */
+.index {
+border-bottom : 1px solid #aed0ea;
+border-left : 1px solid #aed0ea;
+border-right : 1px solid #aed0ea;
+display : block;
+padding : 4px 0 4px 0;
+background-color:#fff
+}
+.index sup {
+float : left;
+display : inline;
+font-size : 12px;
+padding : 0;
+}
+.index .displayLabel {
+/*min-width : 70px;*/
+padding : 3px 5px 1px 5px;
+color : #666666;
+text-align : right;
+font-size : 12px;
+}
+.index .displayData {
+/*min-width : 130px;*/
+padding : 3px 15px 1px 0;
+color : #277eca;
+border-right : 1px dotted #aed0ea;
+font-size : 12px;
+}
+
+label {
+	clear : both;
+	display : block;
+	float : left;
+	padding : 3px 5px 1px 0;
+}
+i {
+font-style : normal;
+display : inline;
+float : left;
+background-image : url(http://www.petro21.com/my-office/img/inputBg.gif);
+background-position : left top;
+background-repeat : no-repeat;
+border : 1px solid #CCCCCC;
+margin : 2px 0 2px 2px;
+padding : 0 0 0 3px;
+vertical-align : middle;
+min-height : 20px;
+}
+b {
+width : 80px;
+display : inline;
+float : left;
+padding : 3px 0 1px 0;
+margin : 2px 0 2px 0;
+clear : both;
+vertical-align : middle;
+color:#757575;
+font-style : normal;
+font-weight : normal;
+}
+
+b.userSeachLabel {
+width : 50px;
+text-align : right;
+}
+b.Inline {
+clear : none;
+}
+#modalExternal del, #area_company_Form del {
+/*width : 90px;
+clear : both;*/
+
+float : left;
+
+display : block;
+margin : 2px 5px 2px 2px;
+font-style : normal;
+text-decoration : none;
+}
+#modalExternal dfn, #area_company_Form dfn {
+width : 90px;
+float : left;
+display : block;
+margin : 2px 0 2px 2px;
+font-style : normal;
+}
+i.NoFormat {
+display : block;
+float : left;
+background-image : none;
+margin : 2px 0 2px 2px;
+min-height : 20px;
+border : 0 solid #ffffff;
+}
+del {
+float : left;
+display : inline;
+text-decoration : none;
+}
+em {
+font-style : normal;
+display : inline;
+}
+samp {
+font-style : normal;
+display : inline;
+}
+/* ////////////////to take out soon ////////////////////
+///////////////////////////////*/
+.tagbox {
+width : 165px;
+}
+.tagbox ol {
+position : absolute;
+background : #000;
+list-style : none;
+list-style-position : inside;
+margin : 0;
+padding : 0;
+}
+.tagbox ol li {
+width : 500px;
+border-left : 1px solid #333;
+border-right : 1px solid #333;
+}
+.tagbox ol li em {
+color : #cf3;
+font-weight : bold;
+font-style : normal;
+}
+.tagbox ol li a {
+text-decoration : none;
+color : #fff;
+display : block;
+padding : 5px;
+border-bottom : 1px solid #333;
+}
+.tagbox ol li a:hover, .hl {
+background : #333;
+}
+.tagbox input {
+width : 100%;
+height : 1.5em;
+padding : 0 0 0 0;
+}
+.tagbox-lkup {
+width : 100%;
+}
+/* ////////////////to take out soon END////////////////////
+///////////////////////////////*/
+
+p#vtip {
+display : none;
+position : absolute;
+padding : 15px;
+left : 5px;
+font-size : 1em;
+background-color : white;
+border : 1px solid #a6c9e2;
+z-index : 9999;
+}
+p#vtip #vtipArrow {
+position : absolute;
+top : -10px;
+left : 5px;
+}
+.toolbar {
+padding : 2px;
+}
+input[type="text"], input[type="textarea"] {
+background : #ffffff url(http://www.petro21.com/img/inputBg.gif) no-repeat left top;
+min-height : 20px;
+border : 1px solid #aaaaaa;
+width : 200px;
+}
+input[type="text"].phoneCode {
+width : 35px;
+margin-right : 5px;
+}
+input[type="textarea"].phoneNumber {
+width : 85px;
+margin-right : 5px;
+}
+textarea {
+background : #ffffff url(http://www.petro21.com/img/inputBg.gif) no-repeat left top;
+margin : 0;
+padding : 0;
+color : #333333;
+border : 1px solid #aaaaaa;
+width : 200px;
+}
+select {
+background : #ffffff url(http://www.petro21.com/img/inputBg.gif) no-repeat left top;
+margin : 0;
+padding : 0;
+color : #333333;
+border : 1px solid #aaaaaa;
+min-width : 165px;
+min-height : 20px;
+width : 200px;
+}
+input[type="text"]:hover, input[type="textarea"]:hover, select:hover {
+border : 1px solid #3d80b3;
+}
+input[type="submit"], input[type="reset"], input[type="button"], button {
+background : #ffffff url(http://www.petro21.com/my-office/_img/button_bg.png) no-repeat left top;
+min-height : 20px;
+color:#fff;
+border : 1px solid #2694e8;
+padding:2px 8px; 
+margin:0 0 0 0px
+}
+input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover {
+background : #ffffff url(http://www.petro21.com/my-office/_img/button_bg_over.png) no-repeat left top;
+background-color : #e5f2fb;
+color:#fff;
+}
+.phoneCode {
+width : 35px;
+}
+.phoneNumber {
+width : 85px;
+}
+#tabs_crm .crm_button_OK, #tabs_events .crm_button_OK {
+width : 26px;
+height : 24px;
+display : inline;
+margin : 0;
+}
+#tabs_crm .INVComments, #tabs_crm .Comment_Public, #tabs_crm .Comment_Paid_Status {
+height : 51px;
+width : 180px;
+display : inline;
+float : left;
+padding : 3px 0 1px 2px;
+}
+.fieldsetHighLight {
+background-image : url(http://www.petro21.com/my-office/img/Fieldset_Background.png);
+background-repeat : repeat-x;
+}
+#tabs_crm .strPhDirect_No, #tabs_crm .strFaxDirect_No, #tabs_crm .strPhSwitchboard_No, #tabs_crm .strPhAlt1_No, #tabs_crm .strFaxSwitchBoard_No, #tabs_crm .strFaxAlt1_No {
+width : 113px;
+}
+#tabs_crm .strPostal_Adress, #tabs_crm .strStreet_Adress, #tabs_crm .Black_Listed_comment, #tabs_crm .strPersonal_Info, #tabs_crm .Perasonal_info_public {
+height : 51px;
+width : 205px;
+overflow : auto;
+}
+#tabs_crm .Black_Listed_Date, #tabs_crm .Title, #tabs_crm #Search_country, #tabs_crm .strFirst_Name, #tabs_crm .strSurname, #tabs_crm .strDesignation, #tabs_crm .BPA_Designation, #tabs_crm .strCity, #tabs_crm .intCode, #tabs_crm .CountryName, #tabs_crm .strMobile_No, #tabs_crm .strEmail, #tabs_crm .strEmail_Alt, #tabs_crm .strSecretary_Email, #tabs_crm .email_web, #tabs_crm .password, #tabs_crm .BPA_Designation, #tabs_crm .Holding_Company, #tabs_crm .strIndSource, #tabs_crm .lngSource_Code_ID, #tabs_crm .Addr_State, #tabs_crm .FinanceEmail, #tabs_crm .FinanceName, #tabs_crm .SecretaryName2, #tabs_crm .SecretaryName1, #tabs_crm .strSecretary_Email2, #tabs_crm .strSecretary_Email, #tabs_crm .userPhoNumbInt, #tabs_crm .userMidlename, #tabs_crm .prefixID {
+width : 205px;
+min-height : 20px;
+}
+
+/* edit in place fields sizes*/
+.fl_text{
+	width:205px;
+	min-height:20px;
+	}
+.fl_date{
+	width:205px;
+	min-height:20px;
+	}
+
+.fl_edit{
+	height:20px;
+	width:175px;
+}
+.fl_area{
+	width:205px;
+	min-height:51px;
+}
+.fl_comboPre{
+	width:40px;
+	min-height:20px;
+
+}
+.fl_comboShort{
+	width:113px;
+	min-height:20px;
+
+}
+.fl_comboLong{
+	min-height:20px;
+	width:180px;
+}
+
+#tabs_crm .STATUS {
+width : 80px;
+min-height : 20px;
+}
+#tabs_crm .UpdatedDate, #tabs_crm .UpdatedUser, #tabs_crm .CaptureDate, #tabs_crm .CaptureUser {
+background-color : #fff;
+width : 80px;
+background-image : none;
+}
+#tabs_crm .company {
+width : 175px;
+display : block;
+float : left;
+border : 1px solid #aaaaaa;
+padding : 3px 0 1px 2px;
+margin : 2px 0 2px 2px;
+background-color : #f6f6f6;
+background : #ffffff url(http://www.petro21.com/img/inputBg.gif) no-repeat left top;
+}
+.field_button_container {
+width : 20px;
+display : block;
+float : left;
+margin : 2px 0 2px 2px;
+padding : 0;
+border : 0 solid #ffffff;
+background-image : none;
+}
+#tabs_crm .phoneCode, #tabs_crm .AreaCodeTel, #tabs_crm .AreaCodeTelSwitch, #tabs_crm .AreaCodeTelAlt, #tabs_crm .AreaCodeFax, #tabs_crm .AreaCodeFaxSwitch, #tabs_crm .AreaCodeFaxAlt, #tabs_crm .FaxCode {
+width : 40px;
+padding : 0 0 0 2px;
+}
+#tabs_crm .functionRemove {
+float : right;
+width : 25px;
+margin : 0 0 0 15px;
+background-image : url(http://www.petro21.com/my-office/img/AppleCross.png);
+background-repeat : no-repeat;
+}
+#tabs_crm #userMenu, #tabs #userMenu {
+list-style-type : none;
+margin : 0;
+padding : 5px 0 0 0;
+border-top:1px solid #e5e5e5;
+border-left:1px solid #e5e5e5;
+border-bottom:3px solid #e5e5e5;
+border-right:3px solid#e5e5e5;
+}
+#tabs_crm #userMenu li, #tabs #userMenu li {
+list-style-type : none;
+margin : 0;
+padding : 3px 5px;
+border-bottom : 1px solid #cccccc;
+}
+a {
+color : #333333;
+text-decoration : none;
+}
+a:hover {
+text-decoration : underline;
+}
+a:visited {
+color : #333333;
+text-decoration : none;
+}
+.tableContainer {
+display : table;
+}
+.tableRow {
+display : table-row;
+}
+.tableColButton, .tableColData, .tableColAction {
+display : table-cell;
+padding : 1px 3px;
+}
+.tableColButton {
+min-width : 60px;
+}
+.tableColAction {
+min-width : 25px;
+}
+.tableColData {
+min-width : 100px;
+}
+.FormTableArea {
+clear : both;
+display : inline;
+border : 1px solid #cccccc;
+border-top : 0 solid #fff;
+}
+#CRM_Legend {
+padding : 10px 20px 0 20px;
+border-top : 1px solid #cccccc;
+border-left : 1px solid #cccccc;
+margin : 0 15px 0 0;
+background-color : #ffffff;
+}
+#CRM_Legend .box {
+float : left;
+display : block;
+width : 10px;
+height : 10px;
+margin : 0 10px 0 0;
+border : 1px solid #999999;
+}
+#CRM_Legend .container {
+float : left;
+display : block;
+min-width : 50px;
+min-height : 30px;
+border-right : 1px dotted #cccccc;
+margin-right : 10px;
+padding : 0 10px 0 0;
+}
+#CRM_Legend ul {
+list-style-type : none;
+padding : 0;
+margin : 0;
+}
+#CRM_Legend li {
+list-style-type : none;
+padding : 0;
+margin : 0;
+}
+#pinBoard {
+position : absolute;
+right : 30px;
+top : 5px;
+height : 142px;
+width : 157px;
+background-image : url(http://www.petro21.com/my-office/_img/PostIt_note-Title.png);
+background-repeat : no-repeat;
+z-index : 100;
+padding : 10px 13px 10px 13px;
+}
+#pinBoardHeader {
+padding : 0 8px 0 0;
+height : 25px;
+}
+#pinBoardArea {
+overflow : auto;
+padding : 0 8px 0 0;
+height : 115px;
+background-image : url(http://www.petro21.com/my-office/_img/PostIt_note-content.png);
+}
+.LV_validation_message {
+padding : 0 0 0 18px;
+margin : 0 0 0 5px;
+float : none;
+width : auto;
+}
+.LV_valid {
+color : #00cc00;
+background-image : url(http://www.petro21.com/my-office/img/ok_tick.gif);
+background-repeat : no-repeat;
+}
+.LV_invalid {
+color : #cc0000;
+background-image : url(http://www.petro21.com/my-office/img/erro_crossr.gif);
+background-repeat : no-repeat;
+}
+.LV_valid_field, input.LV_valid_field:hover, input.LV_valid_field:active, textarea.LV_valid_field:hover, textarea.LV_valid_field:active {
+border : 1px solid #bdbdbd;
+}
+.LV_invalid_field, input.LV_invalid_field:hover, input.LV_invalid_field:active, textarea.LV_invalid_field:hover, textarea.LV_invalid_field:active {
+border : 1px solid #cc0000;
+}
+.slideTab ul.slideMenu {
+display : block;
+float : left;
+}
+.slideTab {
+background : url(http://www.petro21.com/my-office/img/Slide_tab_b.png) repeat-x 0% 0%;
+height : 18px;
+position : relative;
+top : 0;
+z-index : 999;
+
+}
+.slideTab ul.tabButton {
+display : block;
+position : relative;
+float : right;
+clear : right;
+height : 18px;
+width : auto;
+font-weight : bold;
+line-height : 18px;
+margin : 0;
+margin-top : 4px;
+right : 80px;
+color : white;
+font-size : 11px;
+text-align : center;
+}
+.slideTab ul.tabButton li.left {
+background : url(http://www.petro21.com/my-office/img/Slide_tab_l.png) no-repeat left 0%;
+height : 18px;
+width : 20px;
+padding : 0;
+margin : 0;
+display : block;
+float : left;
+}
+.slideTab ul.tabButton li.right {
+background : url(http://www.petro21.com/my-office/img/Slide_tab_r.png) no-repeat left 0%;
+height : 18px;
+width : 21px;
+padding : 0;
+margin : 0;
+display : block;
+float : left;
+}
+.slideTab ul.tabButton li {
+text-align : left;
+padding : 0 0;
+display : block;
+float : left;
+height : 18px;
+background : url(http://www.petro21.com/my-office/img/Slide_tab_m.png) repeat-x 0% 0%;
+}
+.slideTab ul.tabButton li a {
+color : #fff; font-size:11px;
+}
+.slideTab ul.tabButton li a:hover {
+color : #fff;
+}
+.slideTab a.slideOpen, .slideTab a.slideClose {
+height : 18px;
+line-height : 18px !important ;
+padding-left : 15px !important ;
+cursor : pointer;
+display : block;
+width : 60px;
+position : relative;
+top : 0;
+}
+.slideTab a.slideOpen {
+/*background : url(http://www.petro21.com/my-office/img/Slide_bt_open.png) no-repeat left 0%;*/
+}
+.slideTab a.slideClose {
+/*background : url(http://www.petro21.com/my-office/img/Slide_bt_close.png) no-repeat left 0%;*/
+}
+.slideTab a:hover.slideOpen {
+/*background : url(http://www.petro21.com/my-office/img/Slide_bt_open.png) no-repeat left -19px;*/
+}
+.slideTab a:hover.slideClose {
+/*background : url(http://www.petro21.com/my-office/img/Slide_bt_close.png) no-repeat left -19px;*/
+}
+#sliderContainer {
+position : absolute;
+top : 35px;
+width : 100%;
+z-index : 999;
+text-align : center;
+margin-left : auto;
+margin-right : auto;
+}
+#slidepanel {
+width : 100%;
+height : 270px;
+color : #999999;
+background : #000;
+overflow : hidden;
+position : relative;
+z-index : 3;
+display : none;
+}
+#slidepanel a {
+text-decoration : none;
+color : #cccccc;
+}
+#slidepanel a:hover {
+color : white;
+}
+#slidepanel .slideContent {
+width : 960px;
+margin : 0 auto;
+padding-top : 15px;
+text-align : left;
+font-size : 0.95em;
+}
+#slidepanel .slideContent .columns {
+width : 300px;
+margin-right : 10px;
+padding-right : 10px;
+float : left;
+display : inline;
+border-right : 1px dotted #333333;
+}
+#bread_Crum_NU {
+margin : 0 0 10px 20px;
+}
+#bread_Crum_NU .bread_Crum_NU_On {
+float : left;
+display : inline;
+color : #457fab;
+font-weight : bold;
+padding : 4px 0 0 27px;
+width : 17px;
+height : 20px;
+background-image : url(http://www.petro21.com/my-office/img/BreadCrumNU_On.jpg);
+}
+#bread_Crum_NU .bread_Crum_NU_Off {
+float : left;
+display : inline;
+color : #ccc;
+padding : 4px 0 0 23px;
+width : 14px;
+height : 18px;
+background-image : url(http://www.petro21.com/my-office/img/BreadCrumNU_off.jpg);
+}
+
+
+/*////////////// UI Items styling */
+/* Add a scroll bar to autocomplete/*/
+.ui-autocomplete { height: 250px; overflow-y: auto; overflow-x: hidden;}
+.ui-autocomplete-loading{ background: #fff url('http://www.petro21.com/my-office/img/indicator.gif') right center no-repeat; }
+.ui-state-error {color:#fff;}
+/*////////////// UI toolbar styling */
+.toolbar {	padding: 10px 4px; }
+
+/* UI tooltip
+--------------------------------------------------------------------------------*/
+.ui-tooltip { width: 210px; }
+
+
+
+
+/* Grid Styling
+--------------------------------------------------------------------------------*/
+
+.tableGrid{}
+.tableGrid th{ background-image:url(http://www.petro21.com/my-office/_img/grid/grid_header.png)}
+.tableGrid td{border-bottom:1px solid #fff; }
+.rowAltColor{background-color:#e8f2fc}
+.cellGrid{}
+
+
+
+/* Styling for Growl
+----------------------------------*/
+.ui-pnotify {
+	top: 18px;
+	right: 18px;
+	position: absolute;
+	height: auto;
+	/* Ensure that the notices are on top of everything else. */
+	z-index: 1020;
+}
+/* This hides position: fixed from IE6, which doesn't understand it. */
+html > body .ui-pnotify {
+	position: fixed;
+}
+.ui-pnotify .ui-pnotify-shadow {
+	margin: 0;
+	position: absolute;
+	top: .1em;
+	left: .1em;
+	bottom: -.2em;
+	right: -.2em;
+	z-index: -1;
+}
+.ui-pnotify-container {
+	background-position: 0 0;
+	padding: .8em;
+	height: 100%;
+}
+.ui-pnotify-closer {
+	float: right;
+	margin-left: .2em;
+}
+.ui-pnotify-title {
+	display: block;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: .4em;
+}
+.ui-pnotify-text {
+	display: block;
+}
+.ui-pnotify-icon, .ui-pnotify-icon span {
+	display: block;
+	float: left;
+	margin-right: .2em;
+}
+/* Growl History Pulldown
+----------------------------------*/
+.ui-pnotify-history-container {
+	position: absolute;
+	top: 0;
+	right: 18px;
+	width: 70px;
+	border-top: none;
+	/* Ensure that the history container is on top of the notices. */
+	z-index: 10000;
+	display:none;
+}
+.ui-pnotify-history-container .ui-pnotify-history-header {
+	padding: 2px;
+}
+.ui-pnotify-history-container button {
+	cursor: pointer;
+	display: block;
+	width: 100%;
+}
+.ui-pnotify-history-container .ui-pnotify-history-pulldown {
+	display: block;
+	margin: 0 auto;
+}
+.ui-pnotify .picon {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 17px;
+	height: 17px;
+}
+
+/* Unorded List styling 
+----------------------------------*/
+.ul-list-type-none {
+list-style-type : none;
+}
+
+/* Table grids
+----------------------------------*/
+.table-grid td{
+	border-bottom:1px solid #E4E4E4;
+	border-right:1px dotted #E3E3E3;
+}
+
+
+/* STYLING FOR THE MAIN DROP DOWN MENU
+-----------------------------------------------------------------------------------*/
+.megamenu {
+background:#000;
+font-family:helvetica, arial, sans-serif;
+font-size:12px;
+/*letter-spacing:-1px;*/
+color:#FFF;
+margin:0;
+padding:0;
+height:40px;
+padding:0px 0 0 10px;
+/*background-image:url(http://www.petro21.com/my-office/img/Nav_back_09.gif);*/
+}
+.megamenu .navHighLighted{ color:#9FC54E}
+
+.NavPaneContent h3 {
+font-size:14px;
+font-family:verdana, helvetica, arial, sans-serif;
+letter-spacing:-1px;
+color:#fff;
+font-weight:400;
+text-transform:uppercase;
+margin:0;
+padding:8px 0 8px 0px;
+}
+
+#WhoLogedIn { 
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+background-color:#FFFFFF;
+border:1px solid #000000;
+color:#333333;
+width:120px;
+padding:2px 10px;}
+.megamenu ul {
+
+list-style-type:none;
+margin:0;
+padding:10px 0 10px 5px ;
+}
+.megamenu ul li {
+list-style-type:none;
+display:inline;
+margin:0;
+padding:0;
+border-right:1px solid #F4F4F4
+}
+
+.megamenu ul li a,.megamenu ul li a:visited {/* nav bar Li */
+text-decoration:none;
+color:#fff;
+margin:0;
+padding:10px;
+}
+
+.megamenu ul li a:hover,.megamenu ul li a:visited:hover {/* nav bar Li */
+text-decoration:none;
+color:#CEFF65;
+margin:0;
+padding:10px;
+}
+.NavPaneContent {/* Pannel for content */
+display:none;
+text-align:left;
+position:absolute;
+background:#000;
+font-size:12px;
+width:1024px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+margin:0px 0 0 0px;
+padding:10px 20px 40px 10px;
+z-index:1001;
+}
+
+
+ .NavPaneContent ul {/* pane content Li */
+list-style-type:none;
+display:block;
+margin:0;
+padding:3px 0 3px 0px;
+}
+ .NavPaneContent ul li {/* pane content Li */
+list-style-type:none;
+display:block;
+margin:0;
+
+}
+ .NavPaneContent ul li a {/* pane content Li */
+list-style-type:none;
+font-family:Arial, Helvetica, sans-serif;
+display:block;
+color:#888;
+font-size:12px;
+margin:0;
+padding:3px 0 1px 0px;
+}
+
+ .NavPaneContent ul li a:hover {/* pane content Li */
+list-style-type:none;
+color:#9FC54E;
+display:block;
+font-size:12px;
+margin:0;
+
+text-decoration:none;
+}
+
+.NavColumnleft1{
+ position: relative;
+ float: left;
+ left: 0px;
+ width: 245px;
+ padding:0 0 0 10px;
+ 
+}
+.NavColumnleft2{
+ position: relative;
+ float: left;
+ left: 10px;
+ width: 245px;
+ padding:0 0 0 10px;
+ border-left:1px solid #333333
+}
+.NavColumnleft3{
+ position: relative;
+ float: left;
+ left: 20px;
+ width: 245px;
+ padding:0 0 0 10px;
+ border-left:1px solid #333333
+}
+.NavColumnleft4{
+ position: relative;
+ float: left;
+ left: 30px;
+ width: 245px;
+ padding:0 0 0 10px;
+ border-left:1px solid #333333
+}
+.NavColumnleft5{
+ position: relative;
+ float: left;
+ left: 0px;
+ width: 245px;
+ padding:0 0 0 10px;
+}
+.NavColumnleft6{
+ position: relative;
+ float: left;
+ left: 10px;
+ width: 245px;
+ border-left:1px solid #333333;
+ padding:0 0 0 10px;
+}
+.NavColumnleft7{
+ position: relative;
+ float: left;
+ left: 20px;
+ width: 245px;
+ border-left:1px solid #333333;
+ padding:0 0 0 10px;
+}
+.NavColumnleft8{
+ position: relative;
+ float: left;
+ left: 30px;
+ width: 245px;
+ border-left:1px solid #333333;
+ padding:0 0 0 10px;
+}
+.NavColumnright{
+ position: relative;
+ float: right;
+ right: 0px;
+ width: 22px;
+ vertical-align:bottom;
+}
+/* stuff for home page needs to be cleaned 
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
+
+.uploadButton{  padding:6px 10px 6px 10px; background-image:url(img/button_back.jpg); color:#FFFFFF }
+.dashPod{margin:1px; padding:0px; border:10px solid #ececec}
+
+#dashPod_BrochureUpload, #dashPod_Invoice, #dashPod_NewsCounts, #dashPod_DelegateCount, #dashPod_NewsletterClickCount, #dashPod_Subscription_UnregisterReason, #dashPod_SEDocs{
+height:250px; overflow:auto; color:#333333;
+}
+#dashPod_WebsiteBannersClickCount { height:350px; overflow:auto }
+#dashPod_documentation{border-color:#FFF0E3}
+#dashBoard h3 { border-bottom:1px dotted #999999; margin:15px 0 5px 0; color:#000000; padding:0 0 0 15px; font-weight:normal; cursor:pointer}
+#dashBoard ul { list-style:none; margin:0px; padding:0px }
+#dashBoard li { list-style:none; margin: 2px 0px; padding:0px 0px 0px 10px; color:#333333}
+.dashPod_resultCount { text-align:right; margin-right:15px}
+.dashPod_resultCount span  { color:#3B4DF4}
+/*  UNPAID INVOICS STYLES UL  */
+
+.widgit_InvoiceUnpaid ul { margin:0px; padding:5px 0 5px 5px; list-style-type:none; border-bottom:1px dotted #dddddd; }
+.widgit_InvoiceUnpaid ul:hover { background-color:#EEF9FF}
+.widgit_InvoiceUnpaid li { margin:0px; padding:0px; list-style-type:none}
+.widgit_InvoiceUnpaid li:first-child { color:#333333}
+.widgit_InvoiceUnpaid h4 { width:100%; border-bottom:1px dotted #999999; margin:1px 0 0px 0; color:#000000; padding:0 0 0 5px; font-weight:normal; cursor:pointer}
+.widgit_InvoiceUnpaid div {margin:1px 0px; padding:1px; background-color:#FEFEFE}
+
+.widgit_InvoiceUnpaid ul,
+.widgit_NewsletterClickCount ul
+{ margin:0px; padding:5px 0 5px 5px; list-style-type:none; border-bottom:1px dotted #dddddd; }
+
+.widgit_InvoiceUnpaid ul:hover,
+.widgit_NewsletterClickCount ul:hover 
+{ background-color:#EEF9FF}
+
+.widgit_InvoiceUnpaid li,
+.widgit_NewsletterClickCount li
+{ margin:0px; padding:0px; list-style-type:none}
+
+.widgit_InvoiceUnpaid li:first-child,
+.widgit_NewsletterClickCount li:first-child
+ { color:#333333}
+
+.widgit_InvoiceUnpaid h4,
+.widgit_NewsletterClickCount h4
+{ width:100%; border-bottom:1px dotted #999999; margin:1px 0 0px 0; color:#000000; padding:0 0 0 5px; font-weight:normal; cursor:pointer}
+
+.widgit_InvoiceUnpaid div,
+.widgit_NewsletterClickCount div 
+ {margin:1px 0px; padding:1px; background-color:#FEFEFE}
+ 
+ 
+ /* WIZARD STYLING 
+----------------------------------------------------------------------------------------------*/
+ .jw-widget {
+	overflow: hidden;
+}
+.jw-header {
+	/*padding: 10px;*/
+}
+	.jw-header h2 {
+		margin: 0;
+		padding: .3em 0;
+	}
+	.jw-header .jw-counter {
+		float: right;
+	}
+	.jw-title {
+		padding: 1px;
+	}
+
+.jw-content {
+	border-color:#fff;
+}
+	.jw-menu-wrap {
+		width: 10em;
+		margin-right: -10em;
+		float: left;
+	}
+		.jw-menu {
+			margin: 0 .5em;
+		}
+			.jw-menu ol {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			.jw-menu li {
+				padding: .25em .5em;
+				margin-bottom: .25em;
+			}
+	.jw-hasmenu .jw-steps-wrap {
+		margin-left: 10em;
+	}
+	.jw-steps-wrap {
+		height: 422px;
+		overflow: auto;
+		padding: .5em;
+	}
+		.jw-content p {
+			margin-top: 0;
+		}
+		.jw-content div.jw-step {
+		}
+
+.jw-footer {
+	padding: 5px;
+}
+	.jw-counter {
+		float: left;
+		padding: 4px;
+	}
+		/* Text: Left -- Bar: Right */
+		.jw-counter.jw-left .jw-counter-text {
+			float: left;
+			padding: 4px;
+		}
+		.jw-counter.jw-left .jw-counter-progressbar {
+			display: block;
+			width: 55px;
+			float: right;
+		}
+		/* Text Center-aligned over Progress Bar */
+		.jw-counter.jw-center .jw-counter-text {
+			float: left;
+			width: 10em;
+			padding: .4em;
+			text-align: center;
+		}
+		.jw-counter.jw-center .jw-counter-progressbar {
+			display: block;
+		}
+		/* Bar: Left -- Text: Right */
+		.jw-counter.jw-right {
+			text-align: right;
+		}
+		.jw-counter.jw-right .jw-counter-text {
+			float: right;
+			padding: .4em;
+		}
+		.jw-counter.jw-right .jw-counter-progressbar {
+			display: block;
+			width: 6em;
+			float: left;
+		}
+	.jw-buttons {
+		text-align: right;
+	}
+		.jw-buttons button {
+			margin-left: 1em;
+		}
+
+/*--------------------------------
+   UploadiFive   
+--------------------------------*/	
+.uploadifive-button {
+	background-color: #505050;
+	background-image: linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -o-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -moz-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -webkit-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -ms-linear-gradient(bottom, #505050 0%, #707070 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #505050),
+		color-stop(1, #707070)
+	);
+	background-position: center top;
+	background-repeat: no-repeat;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #808080;
+	color: #FFF;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+	width: 100%;
+}
+.uploadifive-button:hover {
+	background-color: #606060;
+	background-image: linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -o-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -moz-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -webkit-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -ms-linear-gradient(top, #606060 0%, #808080 100%);
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #606060),
+		color-stop(1, #808080)
+	);
+	background-position: center bottom;
+}
+.uploadifive-queue-item {
+	background-color: #F5F5F5;
+	border-bottom: 1px dotted #D5D5D5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	font: 12px Arial, Helvetica, Sans-serif;
+	margin-top: 3px;
+	padding: 15px;
+}
+.uploadifive-queue-item .close {
+	background: url('uploadifive-cancel.png') 0 0 no-repeat;
+	display: block;
+	float: right;
+	height: 16px;
+	text-indent: -9999px;
+	width: 16px;
+}
+.uploadifive-queue-item .progress {
+	border: 1px solid #D0D0D0;
+	height: 3px;
+	margin-top: 5px;
+	width: 100%;
+}
+.uploadifive-queue-item .progress-bar {
+	background-color: #0072BC;
+	height: 3px;
+	width: 0;
+}
